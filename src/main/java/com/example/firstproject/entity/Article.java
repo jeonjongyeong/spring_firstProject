@@ -1,6 +1,7 @@
 package com.example.firstproject.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.Column;
@@ -10,6 +11,7 @@ import javax.persistence.Id;
 
 @Entity // DB가 해당 객체를 인식 가능
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
 public class
 Article {
@@ -23,6 +25,5 @@ Article {
 
     @Column
     private String content;
-
 
 }

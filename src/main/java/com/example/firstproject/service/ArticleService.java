@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @Service // 서비스 선언 (서비스 객체를 스프링부트에 생성)
 public class ArticleService {
+
     @Autowired
     private ArticleRepository articleRepository;
 

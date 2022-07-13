@@ -92,80 +92,82 @@ class ArticleServiceTest {
         assertEquals(expected, article);
     }
 
-    @Test
-    void update_성공_존재하는_id와_title_content가_있는_dto_입력() {
-        // 예상
-        Long id = -1L;
-        Article expected = null;
-
-        // 실제
-        Article article = articleService.show(id);
-
-        //비교
-        assertEquals(expected, article);
-    }
-    @Test
-    void update_성공_존재하는_id와_title만_있는_dto_입력() {
-        // 예상
-        Long id = -1L;
-        Article expected = null;
-
-        // 실제
-        Article article = articleService.show(id);
-
-        //비교
-        assertEquals(expected, article);
-    }
-
-    @Test
-    void update_실패_존재하지않는_id의_dto_입력() {
-        // 예상
-        Long id = -1L;
-        Article expected = null;
-
-        // 실제
-        Article article = articleService.show(id);
-
-        //비교
-        assertEquals(expected, article);
-    }
-
-    @Test
-    void update_실패_존재하지않는_id만_있는_dto_입력() {
-        // 예상
-        Long id = -1L;
-        Article expected = null;
-
-        // 실제
-        Article article = articleService.show(id);
-
-        //비교
-        assertEquals(expected, article);
-    }
-
-    @Test
-    void delete_성공_존재하는_id_입력() {
-        // 예상
-        Long id = -1L;
-        Article expected = null;
-
-        // 실제
-        Article article = articleService.show(id);
-
-        //비교
-        assertEquals(expected, article);
-    }
-
-    @Test
-    void delete_성공_존재하지_않는_id_입력() {
-        // 예상
-        Long id = -1L;
-        Article expected = null;
-
-        // 실제
-        Article article = articleService.show(id);
-
-        //비교
-        assertEquals(expected, article);
-    }
+//    @Test
+//    void update_성공_존재하는_id와_title_content가_있는_dto_입력() {
+//        // 예상
+//        Long id = -1L;
+//        Article expected = null;
+//
+//        // 실제
+//        Article article = articleService.show(id);
+//
+//        //비교
+//        assertEquals(expected, article);
+//    }
+//    @Test
+//    void update_성공_존재하는_id와_title만_있는_dto_입력() {
+//        // 예상
+//        Long id = -1L;
+//        Article expected = null;
+//
+//        // 실제
+//        Article article = articleService.show(id);
+//
+//        //비교
+//        assertEquals(expected, article);
+//    }
+//
+//    @Test
+//    void update_실패_존재하지않는_id의_dto_입력() {
+//        // 예상
+//        Long id = -1L;
+//        Article expected = null;
+//
+//        // 실제
+//        Article article = articleService.show(id);
+//
+//        //비교
+//        assertEquals(expected, article);
+//    }
+//
+//    @Test
+//    void update_실패_존재하지않는_id만_있는_dto_입력() {
+//        // 예상
+//        Long id = -1L;
+//        Article expected = null;
+//
+//        // 실제
+//        Article article = articleService.show(id);
+//
+//        //비교
+//        assertEquals(expected, article);
+//    }
+//
+//    @Test
+//    void delete_성공_존재하는_id_입력() {
+//        // 예상
+//        Long id = -1L;
+//        Article expected = null;
+//
+//        // 실제
+//        Article article = articleService.show(id);
+//
+//        //비교
+//        assertEquals(expected, article);
+//    }
+//
+//    @Test
+//    void delete_성공_존재하지_않는_id_입력() {
+//        // 예상
+//        Long id = -1L;
+//        Article expected = null;
+//
+//        // 실제
+//        Article article = articleService.show(id);
+//
+//        //비교
+//        assertEquals(expected, article);
+//    }
+//
+//
 }

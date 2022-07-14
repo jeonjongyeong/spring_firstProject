@@ -30,7 +30,7 @@ class CommentRepositoryTest {
 
             // 예상 결과
             Article article = new Article(4L, "영화는?", "댓글ㄱㄱ");
-            Comment a = new Comment(1L, article, "jeon", "탑건" );
+            Comment a = new Comment(1L, new Article(4L, "영화는?", "댓글ㄱㄱ"), "jeon", "탑건" );
             Comment b = new Comment(2L, article, "lee", "어벤져스" );
             Comment c = new Comment(3L, article, "hong", "스파이더맨" );
             List <Comment> expected = Arrays.asList(a, b, c);

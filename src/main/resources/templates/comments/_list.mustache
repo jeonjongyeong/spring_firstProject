@@ -98,6 +98,22 @@
         console.log(comment);
 
         // 수정 REST API 호출 - fetch() 사용
+        const url = "/api/articles/comments/" + comment.id;
+        fetch(url, {
+        method: "PATCH",        // PATCH 요청
+        body:JSON.stringify(comment),       // 수정된 댓글 객체를 JSON으로 전달
+        headers: {
+        "Content-Type": "application/json"
+        }
+        }).then(response => {
+            // http 응답 코드에 따른 메시지 출력
+            const msg = (response.ok) ? "댓글이 수정 되었습니다." : "댓글 수정 실패";
+            alert(msg);
+
+            // 현재 페이지를 새로고침
+            window.location.reload();
+        });
+
     });
 }
 

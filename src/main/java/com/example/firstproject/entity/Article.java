@@ -17,12 +17,14 @@ Article {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 1, 2, 3, ... 자동 생성 어노테이션 // DB가 id를 자동 생성 어노테이션
+    // @OneToMany// (mappedBy="article", cascade = CascadeType.REMOVE)
     private Long id;
 
     @Column
     private String title;
 
     @Column
+
     private String content;
 
 
@@ -33,3 +35,5 @@ Article {
             this.content = article.content;
     }
 }
+
+
